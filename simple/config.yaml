@@ -3,13 +3,15 @@ cluster:
   sbatch
     --partition={resources.partition}
     --ntasks={threads}
-    --mem={resources.mem_mb}
+    --mem={resources.mem}
     --job-name=smk-{rule}-{wildcards}
     --output=logs/{rule}-{wildcards}-%j.out
+    --parsable
 default-resources:
   - partition=batch
   - nodes=1
   - ntasks=1
+  - mem_mb=None
   - mem=1000
 restart-times: 3
 max-jobs-per-second: 10
