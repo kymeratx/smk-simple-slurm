@@ -6,6 +6,7 @@ cluster:
     --mem={resources.mem}
     --job-name=smk-{rule}-{wildcards}
     --output=logs/{rule}-{wildcards}-%j.out
+    --nodes=1
     --parsable
 default-resources:
   - partition=batch
