@@ -1,5 +1,10 @@
 ## dev
 
+## v1.4.0 - 2024-03-18
+
+> [!WARNING]
+> This is the final release to support Snakemake versions 5, 6, and 7.
+
 Example that specifies memory in GB instead of MB (`mem-gb`)
 
 Example that shares a profile between pipelines, and includes the name of the
@@ -21,6 +26,16 @@ Example that logs stdout and stderr to separate files (`separate-stderr`)
 ([Issue #14][issue-14])
 
 [issue-14]: https://github.com/jdblischak/smk-simple-slurm/issues/14
+
+Example that conditionally specifies a resource for a subset of rules
+([TomHarrop][], [#16][issue-16], [#17][pr-17])
+
+Example that lists multiple partitions for Slurm to choose from ([TomHarrop][],
+[#16][issue-16], [#17][pr-17])
+
+[TomHarrop]: https://github.com/TomHarrop
+[issue-16]: https://github.com/jdblischak/smk-simple-slurm/issues/16
+[pr-17]: https://github.com/jdblischak/smk-simple-slurm/pull/17
 
 ## v1.3.0 - 2022-08-09
 
